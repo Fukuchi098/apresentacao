@@ -7,6 +7,7 @@
 body {
   /*background: color image repeat position/size */
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -15,7 +16,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 40px;
 }
@@ -86,4 +88,11 @@ ul li a:hover {
 
 #social a:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 700px) {
+  body {
+    /*background: color image repeat position/size */
+    background: url(./assets/bg-desktop.jpg) no-repeat top center/cover;
+  }
 }
